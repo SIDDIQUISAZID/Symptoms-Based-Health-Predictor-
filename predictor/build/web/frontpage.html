@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<head>
+<link href="themes/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="themes/js-image-slider.js" type="text/javascript"></script>
+	<style>
+	body{margin:0;
+		background-color:dimgrey;}
+	div.top-view{width:100%;
+				height:70%;
+				background:#222;}
+
+	#slider{margin:3em auto;
+			margin-top:3px;}
+
+	nav.navigation-bar{height:3em;}
+
+	ul.menubar{
+		width:45%;
+		height:3em;
+		float:right;}
+
+	ul.menubar>li{display:inline-block;
+			clear:both;
+			line-height:2em;
+			}
+
+	ul.menubar>li a{color:white;
+		text-decoration:none;
+		margin-bottom:.3em;
+		border:1px solid transparent;
+		padding:1em;}
+
+	.menubar>li a.active{color:white;
+			background:black;
+			border:1px solid yellow;
+			cursor:default;}
+
+	.menubar>li a:hover:not(.active){color:aqua;
+			opacity:.8;
+			border:1px ridge aqua;
+			box-shadow:1px 1px 3px aqua;}
+
+	.submenu{border:1px solid #ddd;
+			width:10em;
+			border-radius:5px;
+			display:none;
+			position:absolute;
+			padding:1em;
+			margin-top:.6em;
+			background:black;
+			}
+
+	li:hover .submenu{display:block;}
+
+
+	section{width:20em;
+			border:1px solid black;
+			display:inline-block;
+			padding:2em;
+			margin:2em;
+			height:25em;
+			color:#222;
+			box-shadow:2px 2px 10px #222;
+			text-align:justify;
+			border-radius:4px;
+			background-color:#aaa;
+			font-size:1em;}
+
+	section.left{float:left;}
+
+	section.right{float:right;}
+
+	section.middle{margin-left:1.9em;}
+
+	section:hover{background:transparent;
+					border:1px solid transparent;
+					color:#ddd;}
+	.button{width:10em;
+			height:3em;
+			color:white;
+			background-color:black;
+			border:none;
+			outline:none;}
+
+	.button:hover{background-color:blue;
+					border:1px solid black;}
+        
+        .button a:link{color:white;}
+
+	footer{background-color:#222;
+			margin:0;
+			padding:1em;
+			height:25em;}
+
+	fieldset{width:30%;
+			color:#DDD;
+			margin-top:.5em;
+			padding:.5em;
+			font-size:2em;}
+
+	form{font-size:.5em;}
+
+	form p{margin:3px;}
+
+	input,textarea{	width:30em;
+			height:2em;
+			margin:.3em;}
+
+	textarea{height:7em;}
+
+	input[type="submit"]{background:#000;
+							border:1px solid #ddd;
+							width:50%;
+							color:white;}
+
+	input[type="submit"]:hover{opacity:.6;}
+
+	input:focus{outline:none;
+				background:#ddd;}
+
+	div#copyright{color:#aaa;
+					text-align:center;
+					margin:1.8em;}
+
+	.logo{	width:100%;
+			margin:0;
+			float:left;
+			font-family:cursive;
+			background-color:black;
+			border-bottom:1px groove #aaa;
+			color:white;}
+
+
+
+	.logo h2{margin-left:1em;
+			padding:.45em;
+			color:aqua;}
+
+	.logo div{float:left;}
+
+	.logo img{width:3.5em;
+		padding:1.2em;
+		margin-left:43em;
+		height:3.5em;}
+	a:visited {color: white}
+        a{text-decoration: none;}
+	</style>
+	
+</head>
+
+<body>
+	<div class="logo">
+		<div>
+		<h2>SYMPTOMS BASED HEALTH PREDICTOR</h2>
+		</div>
+		<img src="images/healthLogo.png"/>
+	</div>
+	<nav class="navigation-bar">
+			
+			<ul class="menubar">
+				<li><a href="frontpage.html" class="active">HOME</a></li>
+				<li><a href="ContactUs.jsp">CONTACT US</a></li>
+				<li><a href="#">ABOUT US</a></li>
+				<li><a href="#">NEWS</a></li>
+				<li>
+                                    <a href="Login.jsp" class="btn">LOG IN  </a> 
+                                </li>
+			</ul>
+		</nav>
+    
+    
+	<div class="top-view">
+            <p style="clear:both"></p>
+            <div id="slider">
+                <img src="images/back11.jpg" />
+                <img src="images/background1.jpg" />
+                <img src="images/back.jpg" />
+                <img src="images/back2.jpg" />
+                <img src="images/back3.jpg" />
+            </div>
+       </div>
+    
+    
+	<section class="left">
+		<h2>What we do for our users</h2>
+		 We believe fulfills the promise of health information on the Internet. We provide credible information, supportive communities, and in-depth reference material about health subjects that matter to you. We are a source for original and timely health information as well as material from well known content providers.<br><br>
+		
+	</section>
+
+	<section class="middle">
+		 <h2>Health News</h2>
+          Insulin Price Hikes Draw Blood, Criticism
+          A steady increase in the price of the life-saving diabetes treatment over the past decade has spurred anger among people living with the ailment with some lawmakers calling for a federal investigation of the companies that make and sell it.
+         <br><br>
+		 <button class="button"><a href= "http://www.webmd.com/diabetes/news/20161108/insulin-price-hikes-draw-blood-criticism#1">READ MORE</a></button>
+	</section>
+
+	<section class="right">
+		 <h2>Living Healthy</h2>
+		 Find your best self here. Discover new ways to live an inspiring life through natural beauty, nutrition and diet, an active lifestyle, and better relationships.Exercise is about more than keeping in shape. It also can help with your emotional and mental healthExercise can help you improve your self-esteem.
+		 <br><br>
+		 <button class="button">
+		 <a href= "http://www.webmd.com/fitness-exercise/default.htm">
+		 READ MORE</a></button>
+	</section>
+	<p style="clear:both"></p>
+	<footer>
+
+		<fieldset>
+		<legend>FOR QUERIES</legend>
+                <form action ="addfeedback" method="post">
+			<p>NAME</p><input type="text" name = "user"/><br>
+                        <p>DESCRIPTION</p><textarea name="textar"></textarea><br><br>
+			<input type="submit"  name="query">
+		</form>
+		</fieldset>
+		<div id="copyright">All Right reserved &copy 2016</div>
+	</footer>
+
+</body>
+</html>
